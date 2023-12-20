@@ -1,0 +1,46 @@
+.main-div{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    section{
+        scroll-snap-align: start;
+}
+}
+section.banner{
+    @apply relative;
+    .sec-top-contant {
+      @apply pt-[90px] text-center;
+      h3 {
+        @apply text-white pt-[6px];
+        @at-root .dark #{&} {
+          @apply text-[#171a20];
+        }
+      }
+    }
+    .sec-bottom-content {
+      p {
+        @apply text-[14px] text-white text-center;
+        @at-root .dark #{&} {
+          @apply text-[#171a20];
+        }
+      }
+    }
+    .bg-full {
+      @apply absolute w-screen -z-[1] h-screen object-cover;
+      &.image {
+        @apply bg-center bg-cover w-full;
+      }
+    }
+    @at-root .dark #{&} h2{
+      @apply text-[#171a20];
+    }
+    
+  }
+  
+
+.category-banner{
+    h3{@apply text-lg font-bold pt-0;}
+    .sec-top-contant{
+        p{@apply text-[14px] font-semibold text-white}
+    }
+}

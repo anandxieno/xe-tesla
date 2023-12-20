@@ -1,0 +1,11 @@
+.primary-header{
+    .tds-icon{ @apply text-white;};
+    .main-header{
+        > li > a{
+            @apply text-sm py-1 px-2 text-white font-semibold mx-2;
+            @at-root .dark #{&} {
+                @apply text-[#171a20];
+            }
+        }
+    }
+}
