@@ -1,9 +1,17 @@
+<!-- <div class="footer-menus relative">
+        <div class="wrap absolute flex gap-x-3.5 left-1/2 -translate-x-1/2">
+            <a href="#">Tesla © < ?php echo currentYear(); ?></a>
+            < ?php
+            wp_nav_menu([
+                'theme_location' => 'Footer',
+                'menu_class'=> 'flex gap-x-3.5',    
+                'menu'           => "footer-menu",
+            ]);
+            ?>
+        </div>
+            
+</div> -->
 
 <?php wp_footer(); ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery-1.11.0.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/slick.min.js"></script>
-
-<script src="<?php echo get_template_directory_uri() ?>/dist/app.js"></script>
 </body>
 </html>
